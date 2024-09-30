@@ -9,8 +9,20 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <button onclick="sayHello()">Click me!</button>
-    <p id="hello"></p>
+    <div class="calculator">
+        <h1>Tož To Kalkulačka</h1>
+        <form id="calcForm">
+            <input type="number" id="prvni" placeholder="První číslo" required>
+            <select id="operace">
+                <option value="scitani">Sčítání (+)</option>´
+                <option value="odecitani">Odečítání (-)</option>
+                <option value="nasobeni">Násobení (x)</option>
+                <option value="deleni">Dělení (÷)</option>
+            </select>
+            <input type="number" id="druhe" placeholder="Druhé číslo" required>
+            <button type="button" onclick="calculate()">Spočítat</button>
+        </form>
+    </div>
+
 </body>
 </html>
