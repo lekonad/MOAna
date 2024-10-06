@@ -10,6 +10,27 @@ if ('serviceWorker' in navigator) {
     });
 }
  
-function sayHello() {
-    document.getElementById('hello').innerText = 'Hello world';
+function calculate() {
+    const prvnicislo = document.getElementById("prvni").value;
+    const druhecislo = document.getElementById("druhe").value;
+    const operator = document.getElementById("operace").value;
+    const vysledek = document.getElementById("vysledek");
+
+    switch(operator) {
+        case "scitani":
+            vysledek.innerText = prvnicislo + druhecislo;
+            break;
+        case "odecitani":
+            vysledek.innerText = prvnicislo - druhecislo;
+            break;
+        case "nasobeni":
+            vysledek.innerText = prvnicislo * druhecislo;
+            break;
+        case "deleni":
+            vysledek.innerText = prvnicislo / druhecislo;
+            break;
+        default:
+            vysledek.innerText = "error";
+    }
+
 }
