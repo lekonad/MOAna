@@ -11,17 +11,17 @@
 <body>
     <div class="calculator">
         <h1>Tož To Kalkulačka</h1>
-        <form id="calcForm">
-            <input type="number" id="prvni" placeholder="První číslo" required>
-            <select id="operace">
+        <form id="calcForm" class="calcForm">
+            <input type="number" id="prvni" class="numberinput" placeholder="První číslo" required><br>
+            <select id="operace" class="operace">
                 <option value="scitani">Sčítání (+)</option>
                 <option value="odecitani">Odečítání (-)</option>
                 <option value="nasobeni">Násobení (x)</option>
                 <option value="deleni">Dělení (÷)</option>
-            </select>
-            <input type="number" id="druhe" placeholder="Druhé číslo" required>
-            <button type="button" onclick="calculate()">Spočítat</button>
+            </select><br>
+            <input type="number" id="druhe" class="numberinput" placeholder="Druhé číslo" required>
             <p id="vysledek"></p>
+            <button type="button" onclick="calculate()">Spočítat</button>
         </form>
     </div>
 
