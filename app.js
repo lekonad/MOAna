@@ -11,8 +11,8 @@ if ('serviceWorker' in navigator) {
 }
  
 function calculate() {
-    const prvnicislo = document.getElementById("prvni").value;
-    const druhecislo = document.getElementById("druhe").value;
+    const prvnicislo = Number(document.getElementById("prvni").value);
+    const druhecislo = Number(document.getElementById("druhe").value);
     const operator = document.getElementById("operace").value;
     const vysledek = document.getElementById("vysledek");
 
